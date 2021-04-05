@@ -1,0 +1,67 @@
+remote_theme: pmarsceill/just-the-docs
+
+
+title: შესავალი ციფრულ ტექნოლოგიებში
+description: თბილისის თავისუფალი უნივერსიტეტი, 2020/2021 გაზაფხული
+
+baseurl: # repo name
+url: "https://freeuni-digital-technologies.github.io" 
+
+exclude: [] 
+
+search_enabled: false
+search:
+  heading_level: 4
+  previews: 3 
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false # TODO try changing
+
+heading_anchors: true
+
+
+# TODO change
+aux_links: 
+    "საიტის კოდი GitHub-ზე":
+    - "//github.com/freeuni-digital-technologies/freeuni-digital-technologies.github.io"
+    "google classroom: OYAN2EL":
+    - "https://classroom.google.com/c/MzEyNjc4NjUyNDM4?cjc=oyan2el"
+
+aux_links_new_tab: true
+
+nav_sort: case_insensitive
+
+back_to_top: true
+back_to_top_text: "გვერდის დასაწყისში დაბრუნება"
+
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "ამ გვერდის კოდი"
+# TODO change this
+gh_edit_repository: "https://github.com/freeuni-digital-technologies/freeuni-digital-technologies.github.io" # the github URL for your repo
+gh_edit_branch: "master" # TODO change # the branch that your docs is served from
+gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+
+color_scheme: nil
+
+# TODO add more plugins
+plugins:
+  - jekyll-seo-tag
+
+# TODO what does this do
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "commentable"
