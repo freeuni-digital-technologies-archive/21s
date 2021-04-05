@@ -2,7 +2,7 @@ remote_theme: pmarsceill/just-the-docs
 
 
 title: შესავალი ციფრულ ტექნოლოგიებში
-description: თბილისის თავისუფალი უნივერსიტეტი, 2020/2021 გაზაფხული
+description: თბილისის თავისუფალი უნივერსიტეტი, 2021 გაზაფხული
 
 baseurl: # repo name
 url: "https://freeuni-digital-technologies.github.io" 
