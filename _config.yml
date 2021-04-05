@@ -1,4 +1,4 @@
-theme: pmarsceill/just-the-docs
+remote_theme: pmarsceill/just-the-docs
 
 
 title: შესავალი ციფრულ ტექნოლოგიებში
@@ -59,9 +59,3 @@ compress_html:
   blanklines: false
   profile: false
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "commentable"
