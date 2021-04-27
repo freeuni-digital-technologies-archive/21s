@@ -1,6 +1,7 @@
 ---
 title: სამუშაო გარემოს - კარელი
 parent: რესურსები
+nav_exclude: true
 --- 
 
 
