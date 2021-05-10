@@ -27,19 +27,19 @@ parent: რესურსები
 - font-size ტექსტის ზომის ცვლილება პიქსელების და ფარდობითი ზომის მიხედვით
 - font-style, font-weight
 - line-height, text-alingn, text-decoration,
-- CSS სტილების მემკვიდრეობითობა
+- CSS სტილების მემკვიდრეობითობა: მაგალითად თუ style-ში დავამატებთ Body-ის სტილებს ის გავრცელდება მასში შემავალ ნებისმიერ ელემენტზე
 
 ### CSS განლაგება
 - span და div
 - overflow, overflow-y, overflow-x
 - margin, border, padding საზღვრები
-- position ფა z-index
-- CSS სტილების გადალაგება გვერდის ზომების მიხედვით
+- position და z-index
+- CSS სტილების გადალაგება, float, margin-left, margin-right...
 
 ### CSS სელექტორები
 - კლასის და ელემენტის სელექტორის გაერთიანება 
 - შვილობილი სელექტორები
-- დინამიური ფსევდო-კლასები link, visited, hover, active, focus
+- დინამიური ფსევდო-კლასები: link, visited, hover, active, focus
 - რას ანიჭებს უპირატესობას CSS სტილის მინიჭებისას
 
 ### CSS ჩასმის სხვა საშუალებები
