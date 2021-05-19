@@ -9,7 +9,7 @@ url: "https://freeuni-digital-technologies.github.io"
 
 exclude: [] 
 
-search_enabled: false
+search_enabled: true
 search:
   heading_level: 4
   previews: 3 
