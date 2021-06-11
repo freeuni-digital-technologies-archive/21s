@@ -4,35 +4,96 @@
 	<title>სემინარი 8</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
-	
+	<style>
+	#count {
+		width: 15px;
+		margin-right: 15px;
+		
+	}
+	.mini-calc input {
+		width: 10px;
+	}
+	</style>
 </head>
 <body>
-	<div id="ex1">
-		<h3>მარტივი სიის შექმნა</h3>
-		<p>გვაქვს რეცეპტი და გვინდა მისი ინგრედიენტები ჩამოვწეროთ</p>
-		<ul id="list1">
+	<div>
+		<h3> Table of contents </h3>
+		<ul id="toc">
 		</ul>
 	</div>
-	
-	<div id="ex2">
-		<h3>პრერეკვიზიტების შემოწმება</h3>
-		<p>გვაქვს ორი საგანი, ერთ-ერთი არის მეორის პრერეკვიზიტი. ასევე გვყავს ორი სტუდენტი, ერთ მათგანს ჩაბარებული აქვს პირველი საგანი, მეორეს არა. ორივე სტუდენტს უნდა შეეძლოს პირველი საგნის არჩევა. მხოლოდ მეორეს უნდა შეეძლოს მეორის არჩევა</p>
+	<div id="exercises">
+		
+		<div id="ex1">
+			<h3>პრერეკვიზიტების შემოწმება</h3>
+			<p>გვაქვს ორი საგანი, ერთ-ერთი არის მეორის პრერეკვიზიტი. ასევე გვყავს ორი სტუდენტი, ერთ მათგანს ჩაბარებული აქვს პირველი საგანი, მეორეს არა. ორივე სტუდენტს უნდა შეეძლოს პირველი საგნის არჩევა. მხოლოდ მეორეს უნდა შეეძლოს მეორის არჩევა</p>
+		</div>
+		
+		<div id="ex2">
+			<h3>დაწკაპუნების დამთვლელი</h3>
+			<div id="click-app">
+				<span id="count">0</span>
+				<button id="click-app-button">increase counter</button>
+			</div>
+			<div id="click-app2">
+				<span id="count2">0</span>
+				<button onclick="increaseCounter2()" id="click-app-button2">increase counter</button>
+			</div>
+		</div>
+
+		<div id="ex3">
+			<h3>მომხმარებლის მონაცემის შეყვანა</h3>
+			<div id="hello-app">
+				<input id="username" type="text">
+				<button onclick="sayHello()">say hello</button>
+				<p id="message"></p>
+			</div>
+		</div>
+
+		<div id="ex4">
+			<h3>მინი კალკულატორი</h3>
+			<div id="mini-calc">
+				<span>a: </span>
+				<input style="width: 100px" type="number" id="a">
+				<span>b: </span>
+				<input style="width: 100px" type="number" id="b">
+				<button onclick="miniCalcSum()">+</button>
+				<button onclick="miniCalcSubstract()">-</button>
+				
+				<span id="minicalc-result"></span>
+			</div>
+		</div>
+
+		<div id="ex5">
+			<h3>todo list</h3>
+			<div id="todo-list">
+				<input type="text" id="task-name">
+				<button onclick="addTask()">add task</button>
+				<h5>your tasks:</h5>
+				<ul id="tasks">
+				</ul>
+			</div>
+		</div>
+
+		<div id="ex6">
+			<h3>მარტივი სიის შექმნა</h3>
+			<p>გვაქვს რეცეპტი და გვინდა მისი ინგრედიენტები ჩამოვწეროთ</p>
+			<ul id="list1">
+			</ul>
+		</div>
+		
+
+		<div id="ex">
+			<h3>GPA-ს დამთვლელი</h3>
+			<p>გვსურს დავწეროთ პროგრამა, რომელიც დაითვლის სტუდენტის GPA-ს.</p>
+			<p>მოდი შევქმნათ საგნის ობიექტები, თითოეულს ქონდეს `id, სახელი, კრედიტების რაოდენობა`. შემდეგ სტუდენტის ობიექტი: `id, სახელი და შედეგების ობიექტი`. შედეგების ობიექტს უბრალოდ საგნის id-ს keyზე ექნება სტუდენტის მიერ მიღებული ქულა. </p>
+		</div>
+
 	</div>
+	
+
+
 	<script id="main-script" src="index.js"></script>
 
-	<div id="ex3">
-		<h3>GPA-ს დამთვლელი</h3>
-		<p>გვსურს დავწეროთ პროგრამა, რომელიც დაითვლის სტუდენტის GPA-ს.</p>
-		<p>მოდი შევქმნათ საგნის ობიექტები, თითოეულს ქონდეს `id, სახელი, კრედიტების რაოდენობა`. შემდეგ სტუდენტის ობიექტი: `id, სახელი და შედეგების ობიექტი`. შედეგების ობიექტს უბრალოდ საგნის id-ს keyზე ექნება სტუდენტის მიერ მიღებული ქულა. </p>
-	</div>
-
-	<div id="ex4">
-	</div>
-
-	<div id="ex5">
-		<h3>კალკულატორი</h3>
-		<p></p>
-	</div>
 
 	<!-- ამ ორ თეგს არ მიაქციოთ ყურადღება -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js" integrity="sha512-s+tOYYcC3Jybgr9mVsdAxsRYlGNq4mlAurOrfNuGMQ/SCofNPu92tjE7YRZCsdEtWL1yGkqk15fU/ark206YTg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
