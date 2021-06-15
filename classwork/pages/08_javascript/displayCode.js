@@ -3,12 +3,17 @@ function reqListener(){
 	snippets = snippets.filter(e => e.length > 0).map(e => {
 		const elemName = e.split('\n')[0]
 		const code = e.substr(e.indexOf('\n')+1).replace(/\n*$/, '')
-		const codeElem = document.createElement('pre')
-		codeElem.innerHTML=`<code className='language-javascript'>${code}</code>`
-		document.getElementById(elemName).appendChild(codeElem)
-		hljs.highlightAll();
+		const preElem = document.createElement('pre')
+		code.split('\n').filter(c => c.length > 0).map(c => {	
+			const codeElem=document.createElement('code')
+			codeElem.innerText=c
+			codeElem.className='language-javascript'
+			preElem.appendChild(codeElem)
+		})
+		document.getElementById(elemName).appendChild(preElem)
+		
 	})
-
+	hljs.highlightAll();
 }
 
 const script = document.getElementById('main-script')
@@ -29,7 +34,7 @@ if (!src.includes("file:///")) {
 		.getElementById("toc")
 		.innerHTML = [...document
 							.getElementById('exercises')
-							.getElementsByTagName('div')]
+							.getElementsByClassName('exercise')]
 							.map(e => `<li><a href="#${e.id}">${e.id}</a></li>`)
 							.join('')
 }

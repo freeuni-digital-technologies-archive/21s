@@ -21,26 +21,11 @@
 		<ul id="toc">
 		</ul>
 	</div>
+	<p>ამ გვერზე მოცემულია თითოეული ნაწილის შესაბამისი კოდის ნაწილი index.js ფაილიდან. კომფორტული მეცადინეობისთვის გამოიყენეთ 
+		inspect element ფუნქცია. ფაილების (index.html, index.js)
+	გადმოწერის და ლეპტოპზე გახსნის შემთხვევაში შემთხვევაში კოდის ნაწილები აღარ გამოჩნდება</p>
 	<div id="exercises">
-		
-		<div id="ex1">
-			<h3>პრერეკვიზიტების შემოწმება</h3>
-			<p>გვაქვს ორი საგანი, ერთ-ერთი არის მეორის პრერეკვიზიტი. ასევე გვყავს ორი სტუდენტი, ერთ მათგანს ჩაბარებული აქვს პირველი საგანი, მეორეს არა. ორივე სტუდენტს უნდა შეეძლოს პირველი საგნის არჩევა. მხოლოდ მეორეს უნდა შეეძლოს მეორის არჩევა</p>
-		</div>
-		
-		<div id="ex2">
-			<h3>დაწკაპუნების დამთვლელი</h3>
-			<div id="click-app">
-				<span id="count">0</span>
-				<button id="click-app-button">increase counter</button>
-			</div>
-			<div id="click-app2">
-				<span id="count2">0</span>
-				<button onclick="increaseCounter2()" id="click-app-button2">increase counter</button>
-			</div>
-		</div>
-
-		<div id="ex3">
+		<div id="ex1-say-hello" class="exercise">
 			<h3>მომხმარებლის მონაცემის შეყვანა</h3>
 			<div id="hello-app">
 				<input id="username" type="text">
@@ -49,21 +34,8 @@
 			</div>
 		</div>
 
-		<div id="ex4">
-			<h3>მინი კალკულატორი</h3>
-			<div id="mini-calc">
-				<span>a: </span>
-				<input style="width: 100px" type="number" id="a">
-				<span>b: </span>
-				<input style="width: 100px" type="number" id="b">
-				<button onclick="miniCalcSum()">+</button>
-				<button onclick="miniCalcSubstract()">-</button>
-				
-				<span id="minicalc-result"></span>
-			</div>
-		</div>
-
-		<div id="ex5">
+		
+		<div id="ex2-todo-list" class="exercise">
 			<h3>todo list</h3>
 			<div id="todo-list">
 				<input type="text" id="task-name">
@@ -74,7 +46,31 @@
 			</div>
 		</div>
 
-		<div id="ex6">
+		<div id="ex3-mini-calc" class="exercise">
+			<h3>მინი კალკულატორი</h3>
+			<div id="mini-calc">
+				<span>a: </span>
+				<input style="width: 100px" type="number" id="a">
+				<span>b: </span>
+				<input style="width: 100px" type="number" id="b">
+				<button onclick="miniCalcSum()">+</button>
+				<button onclick="miniCalcSubstract()">-</button>
+				so
+				<span id="minicalc-result"></span>
+			</div>
+		</div>
+
+		
+
+		<div id="ex4-click-app" class="exercise">
+			<h3>დაწკაპუნების დამთვლელი</h3>
+			<div id="click-app">
+				<span id="count">0</span>
+				<button onclick="increaseCounter()" id="click-app-button">increase counter</button>
+			</div>
+		</div>
+
+		<div id="ex5-recipe-list" class="exercise">
 			<h3>მარტივი სიის შექმნა</h3>
 			<p>გვაქვს რეცეპტი და გვინდა მისი ინგრედიენტები ჩამოვწეროთ</p>
 			<ul id="list1">
@@ -82,12 +78,16 @@
 		</div>
 		
 
-		<div id="ex">
+		<!-- <div id="ex" class="exercise">
 			<h3>GPA-ს დამთვლელი</h3>
 			<p>გვსურს დავწეროთ პროგრამა, რომელიც დაითვლის სტუდენტის GPA-ს.</p>
 			<p>მოდი შევქმნათ საგნის ობიექტები, თითოეულს ქონდეს `id, სახელი, კრედიტების რაოდენობა`. შემდეგ სტუდენტის ობიექტი: `id, სახელი და შედეგების ობიექტი`. შედეგების ობიექტს უბრალოდ საგნის id-ს keyზე ექნება სტუდენტის მიერ მიღებული ქულა. </p>
-		</div>
+		</div> -->
 
+		<div id="ex6-check-prereqs" class="exercise">
+			<h3>პრერეკვიზიტების შემოწმება</h3>
+			<p>გვაქვს ორი საგანი, ერთ-ერთი არის მეორის პრერეკვიზიტი. ასევე გვყავს ორი სტუდენტი, ერთ მათგანს ჩაბარებული აქვს პირველი საგანი, მეორეს არა. ორივე სტუდენტს უნდა შეეძლოს პირველი საგნის არჩევა. მხოლოდ მეორეს უნდა შეეძლოს მეორის არჩევა</p>
+		</div>
 	</div>
 	
 
@@ -96,7 +96,12 @@
 
 
 	<!-- ამ ორ თეგს არ მიაქციოთ ყურადღება -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js" integrity="sha512-s+tOYYcC3Jybgr9mVsdAxsRYlGNq4mlAurOrfNuGMQ/SCofNPu92tjE7YRZCsdEtWL1yGkqk15fU/ark206YTg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js" integrity="sha512-s+tOYYcC3Jybgr9mVsdAxsRYlGNq4mlAurOrfNuGMQ/SCofNPu92tjE7YRZCsdEtWL1yGkqk15fU/ark206YTg==" crossorigin="anonymous" referrerpolicy="no
+	-referrer"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" integrity="sha512-kZqGbhf9JTB4bVJ0G8HCkqmaPcRgo88F0dneK30yku5Y/dep7CZfCnNml2Je/sY4lBoqoksXz4PtVXS4GHSUzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
 	<script src="displayCode.js"></script>
 </body>
 </html>
