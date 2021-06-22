@@ -1,0 +1,10 @@
+/* შემდეგი ორი სელექტორი არ წაშალოთ */
+
+body {
+	margin: auto !important;
+}
+
+.error {
+  visibility: hidden !important;
+  height: 0;
+}

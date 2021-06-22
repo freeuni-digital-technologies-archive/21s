@@ -13,25 +13,27 @@ let POSTS_ID = 0
  * რომელ პოსტს დავაჭირეთ. ამ ინფორმაციის "შენახვა" შეგვიძლია
  * ახალი პოსტის ელემენტის შექმნისას
  */
-function createPost() {
-	let textElem = document.getElementById('post-text')
-	let postsElem = document.getElementById('posts')
+function createNewPost() {
+	let textElem = document.getElementById('new-post-text')
+	let postsElem = document.getElementById('posts-container')
 	// ამ სიმბოლოთი დაწყებულ სტრინგებში შეგიძლიათ გამოიყენოთ
 	// ჯავასკრიტპის ცვლადები და სტრინგი დაწეროთ რამდენიმე ხაზზე
 	postElem = `
-		<div class="post" id="post${POSTS_ID}">
+		<div class="post-container" id="post${POSTS_ID}">
 			<div class="post-text">
 				${textElem.value}
 			</div>
 			<span class="likes-number">0</span> likes
-			<!--ფუნქციის გამოძახებისას შეგვიძლია არგუმენტი გამოვიძახოთ
-			ნახეთ როგორ ემატება ეს ხაზი inspect element-ის გამოიყენებით-->
 			<button onclick="like(${POSTS_ID})" class="like-button">like</button>
 		</div>
 	`
+	// ზემოთ მოცემულ ღილაკზე დაჭერისას ფუნქციის გამოძახებისას შეგვიძლია არგუმენტი გამოვიძახოთ
+	// ნახეთ როგორ ემატება ეს ხაზი inspect element-ის გამოიყენებით-->
 	POSTS_ID++
 	postsElem.insertAdjacentHTML('afterbegin', postElem)
 }
+
+
 
 function like(postId) {
 	let postElem = document.getElementById('post' + postId)

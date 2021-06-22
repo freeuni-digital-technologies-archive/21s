@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Social Media App</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <!-- for tests, DO NOT MODIFY next line -->
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+  </head>
+  <body>
+    <!-- ეს ხაზები არის ტესტებისთვის. დააიგნორეთ და არ შეცვალოთ -->
+    <div id="tests" class="container">
+      <div id="mocha"></div>
+      <script src="https://unpkg.com/chai/chai.js"></script>
+      <script src="https://unpkg.com/mocha/mocha.js"></script>
+    </div>
+    <!-- აქ იწყება აპლიკაცია -->
+    <div id="app">
+      <h1 id="app-title">Social Media App</h1>
+      <div id="new-post-container">
+        <textarea id="new-post-text" placeholder="what's up?"> </textarea>
+        <div id="new-post-button-container">
+          <button id="new-post-button" onclick="createNewPost()">Post</button>
+        </div>
+      </div>
+
+      <div id="posts-container"></div>
+    </div>
+
+    <script src="index.js"></script>
+
+    
+    <!-- ეს ხაზები არის ტესტებისთვის. დააიგნორეთ და არ შეცვალოთ -->
+    <!-- START tests -->
+    <script src="./config.js"></script>
+    <script src="./tests.js"></script>
+    <!-- END tests -->
+  </body>
+</html>
