@@ -7,7 +7,7 @@ function createNewPost() {
     POSTS_ID_COUNTER++;
     let postElem = `
   	<div id="post${postId}" class='post-container'>
-  		<div class="post-text">${text}</div>
+    	<div class="post-text">${text}</div>
   	</div>`;
     postsElem.insertAdjacentHTML("afterbegin", postElem);
 }

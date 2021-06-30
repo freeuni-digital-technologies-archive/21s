@@ -1,4 +1,4 @@
-// მარტივი ვერსია ლაიქის გარეშე
+// მარტივი ვერსია
 function createPostv1() {
 	let textElem = document.getElementById('post-text')
 	let postsElem = document.getElementById('posts')
@@ -8,11 +8,6 @@ function createPostv1() {
 
 let POSTS_ID = 0
 
-/** 
- * იმისთვის, რომ ლაიქის ღილაკი მუშაობდეს, ლაიქ ფუნქციამ უნდა იცოდეს,
- * რომელ პოსტს დავაჭირეთ. ამ ინფორმაციის "შენახვა" შეგვიძლია
- * ახალი პოსტის ელემენტის შექმნისას
- */
 function createNewPost() {
 	let textElem = document.getElementById('new-post-text')
 	let postsElem = document.getElementById('posts-container')
@@ -23,8 +18,6 @@ function createNewPost() {
 			<div class="post-text">
 				${textElem.value}
 			</div>
-			<span class="likes-number">0</span> likes
-			<button onclick="like(${POSTS_ID})" class="like-button">like</button>
 		</div>
 	`
 	// ზემოთ მოცემულ ღილაკზე დაჭერისას ფუნქციის გამოძახებისას შეგვიძლია არგუმენტი გამოვიძახოთ
@@ -33,11 +26,3 @@ function createNewPost() {
 	postsElem.insertAdjacentHTML('afterbegin', postElem)
 }
 
-
-
-function like(postId) {
-	let postElem = document.getElementById('post' + postId)
-	let likesElem = postElem.getElementsByClassName('likes-number')[0]
-	let currentLikes = Number(likesElem.innerText)
-	likesElem.innerText = currentLikes + 1
-}

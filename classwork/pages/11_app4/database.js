@@ -56,8 +56,12 @@ class Database {
     }
 
     get(attribute, value) {
-        return this.getAll().find(e => e[attribute] == value)
-    }
+        const res = this.getAll().find(e => e[attribute] == value)
+        if (typeof(res) === 'undefined') {
+            return null
+        }
+        return res
+     }
 
     getById(id) {
         return this.get('id',id)
