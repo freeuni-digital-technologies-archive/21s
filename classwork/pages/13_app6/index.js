@@ -46,6 +46,9 @@ function getPostComments(post) {
 	</div>`
 }
 
+// ამ ფუნქციაში იგივე პრინციპი არის, რაც პოსტის დადებისას
+// ერთადერთი განსხვავება ის არის, რომ დოკუმენტის მაგივრად 
+// postElemს ვპოულობთ და მერე ყველაფერს იმავენაირად ვაკეთებთ
 function addPostComment(postId) {
 	let postElem = document.querySelector('#post' + postId)
 	let postComments = postElem.querySelector('.post-comments-container')
