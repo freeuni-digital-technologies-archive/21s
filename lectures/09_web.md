@@ -144,31 +144,33 @@ GDPR არის ევროკავშირის კანონპრო�
 
 კლავიატურის ყოველ დაჭერაზე გუგლს უგზავნის მოთხოვნას
 
+<section class="non-compulsory" markdown="1">
 ## მთავარი იდეები
 
 
-## დეცენტრალიზაცია
+### დეცენტრალიზაცია
 No permission is needed from a central authority to post anything on the web, there is no central controlling node, and so no single point of failure … and no “kill switch”! This also implies freedom from indiscriminate censorship and surveillance.
 
 
-## თანასწორობა - არანაირი დისკრიმინაცია
+### თანასწორობა - არანაირი დისკრიმინაცია
 
 If I pay to connect to the internet with a certain quality of service, and you pay to connect with that or a greater quality of service, then we can both communicate at the same level. This principle of equity is also known as Net Neutrality.
 
 
-## საზოგადოებასთან ჩართულობა
+### საზოგადოებასთან ჩართულობა
 
 Instead of code being written and controlled by a small group of experts, it was developed in full view of everyone, encouraging maximum participation and experimentation.
 
 
-## უნივერსალურობა / თავისუფლება
+### უნივერსალურობა / თავისუფლება
 
 For anyone to be able to publish anything on the web, all the computers involved have to speak the same languages to each other, no matter what different hardware people are using; where they live; or what cultural and political beliefs they have. In this way, the web breaks down silos while still allowing diversity to flourish.
 
 
-## კონსესუსი
+### კონსესუსი
 For universal standards to work, everyone had to agree to use them. Tim and others achieved this consensus by giving everyone a say in creating the standards, through a transparent, participatory process at W3C.
 
+</section>
 
 ## საინტერესო საიტები
 - [გააქრე რეკლამები შენი მთლიანი ქსელიდან](https://pi-hole.net/)
