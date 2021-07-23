@@ -1,5 +1,5 @@
 ---
-title: რესურსები, ინფორმაცია
+title: რესურსები
 has_children: true
 ---
 
