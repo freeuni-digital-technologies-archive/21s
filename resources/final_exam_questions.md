@@ -286,7 +286,7 @@ function deleteElement(id) {
 
 ```js
 function likePost(postId) {
-    let postElem =  document.getElementById('#post' + postId); 
+    let postElem =  document.getElementById('post' + postId); 
     let likeCount = document.querySelector('span.post_like_count');
     likeCount.innerText = Number(likeCount.innerText) + 1;
 }
