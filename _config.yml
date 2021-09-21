@@ -4,7 +4,7 @@ remote_theme: pmarsceill/just-the-docs
 title: შესავალი ციფრულ ტექნოლოგიებში
 description: თბილისის თავისუფალი უნივერსიტეტი, 2021 გაზაფხული
 
-baseurl: # repo name
+baseurl: "21s"
 url: "https://freeuni-digital-technologies.github.io" 
 
 exclude: [] 
@@ -25,7 +25,7 @@ heading_anchors: true
 # TODO change
 aux_links: 
     "საიტის კოდი GitHub-ზე":
-    - "//github.com/freeuni-digital-technologies/freeuni-digital-technologies.github.io"
+    - "//github.com/freeuni-digital-technologies/21s"
     "google classroom: OYAN2EL":
     - "https://classroom.google.com/c/MzEyNjc4NjUyNDM4?cjc=oyan2el"
 
@@ -39,7 +39,7 @@ back_to_top_text: "გვერდის დასაწყისში და�
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "ამ გვერდის კოდი"
 # TODO change this
-gh_edit_repository: "https://github.com/freeuni-digital-technologies/freeuni-digital-technologies.github.io" # the github URL for your repo
+gh_edit_repository: "https://github.com/freeuni-digital-technologies/21s" # the github URL for your repo
 gh_edit_branch: "master" # TODO change # the branch that your docs is served from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
